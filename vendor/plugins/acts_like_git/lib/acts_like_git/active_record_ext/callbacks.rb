@@ -1,4 +1,4 @@
-gem 'mojombo-grit', '~> 0.9'
+#gem 'mojombo-grit', '~> 0.9'
 require 'grit'
 require 'fileutils'
 

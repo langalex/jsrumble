@@ -7,6 +7,9 @@
     <% if Wiki.syntax_highlight %>
       <%= javascript_include_tag 'shCore', 'shBrushRuby' %>
     <% end %>
+    
+    <%= yield :head %>
+    
   </head>
   
   <body>

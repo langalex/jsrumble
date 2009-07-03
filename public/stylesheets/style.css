@@ -284,6 +284,11 @@ div.buttons {
   text-align: left !important;
 }
 
+#disqus_thread {
+  background-color: #FBF9CE;
+  padding: 10px;
+}
+
 #notice {
   color: #333; 
   text-align: center; 

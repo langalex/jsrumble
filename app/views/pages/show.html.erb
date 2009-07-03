@@ -2,6 +2,9 @@
 
 <%= wiki_link(@page.body_html) %>
 
+<hr/>
+<%= render :partial => 'disqus_comments' %>
+
 <div id="meta">
   Current revision is <strong><%= @page.log.first.slice(0,7) %></strong> from <strong><%= @page.user ? @page.user.login : "anonymous" %></strong>.<br />
 </div>
