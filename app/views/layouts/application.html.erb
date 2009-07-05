@@ -22,11 +22,19 @@
       
       <h1><%= link_to Wiki.name, root_path %></h1>
       <h2><%= Wiki.description %></h2>
+      <%- if @navigation -%>
+        <div id="navigation">
+          <%= wiki_link(@navigation.body_html)  %>
+        </div>
+      <%- end -%>
     </div>
     
     <div id="context">
       <div id="side">
         <%= yield :side %>
+        <%- if @sidebar -%>
+          <%= wiki_link(@sidebar.body_html)  %>
+        <%- end -%>
       </div>
       
       <div id="content">

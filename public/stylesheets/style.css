@@ -11,7 +11,7 @@ BODY {
   /* background: #222228; */
   padding-bottom: 0px;
   border: 0px;
-  border-bottom: 4px solid #000;
+  border-bottom: 0px;
   padding-top: 0.45em;
 }
 
@@ -35,7 +35,34 @@ BODY {
   margin-top: 0px;
   margin-bottom: 1.4em;
   margin-left: 1.1em;
-  
+}
+
+#top #navigation {
+  border-top: 1px solid white;
+}
+
+#top #navigation ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+#top #navigation li {
+  display: inline-block;
+  border-right: 1px solid white;
+  padding: 0px;
+  margin: 0px;
+}
+
+#top #navigation li:last-child {
+  border-right: 0px solid white;
+}
+
+#top #navigation li a {
+  color: white;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  padding-right: 20px;
 }
 
 #badge {

@@ -23,7 +23,7 @@ class PageTest < ActiveSupport::TestCase
     end
     
     it "renders the body html" do
-      assert_equal "<p>is a <strong>fun</strong> gent.</p>", @page.body_html
+      assert_equal "<p>is a <em>fun</em> gent.</p>", @page.body_html
     end
     
     context "saving" do

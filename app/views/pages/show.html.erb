@@ -20,11 +20,5 @@
 
 <% side_block("Revisions") do %>
   <p>Total revisions: <%= @page.log.size %></p>
-
-  <p>
-    <ul>
-      <%= history_list_for(@page) %>
-    </ul>
-    <p class="meta-link"><%= link_to 'view all revisions', revisions_page_path(@page) %></p>
-  </p>
+  <p class="meta-link"><%= link_to 'view all revisions', revisions_page_path(@page) %></p>
 <% end %>
