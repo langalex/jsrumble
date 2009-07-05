@@ -14,11 +14,6 @@ Wiki.syntax_highlight = true
 
 Wiki.anonymous_gravatar_id = Digest::MD5.hexdigest("anonymous (at) " + Wiki.name)
 
-#require 'RedCloth'
-#Formatter = RedCloth
-
-# Change to Markdown if you want
-#
-require 'BlueCloth'
+gem 'BlueCloth'
+require 'bluecloth'
 Formatter = BlueCloth
-
