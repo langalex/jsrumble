@@ -1,5 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :pages, :member => {:revert => :post, :revisions => :get}
+  map.resources :changes, :only => :index
   
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'

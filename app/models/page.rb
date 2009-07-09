@@ -40,4 +40,12 @@ class Page < ActiveRecord::Base
   def to_param
     wiki_title(false)
   end
+  
+  def self.recent_changes
+    git.log('master', 'pages')
+  end
+  
+  def self.git
+    @git ||= Grit::Repo.new(git_settings.repository)
+  end
 end
