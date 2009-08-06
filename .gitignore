@@ -1,4 +1,5 @@
 *.log
 database.yml
 git_test
-
+git_development
+.DS_Store
