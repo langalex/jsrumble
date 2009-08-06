@@ -1,4 +1,4 @@
-BODY {
+body {
   background: #99999f;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 11pt;
@@ -7,7 +7,7 @@ BODY {
 }
 
 #top {
-  background: #0A1219;
+  background: #003942;
   /* background: #222228; */
   padding-bottom: 0px;
   border: 0px;
@@ -73,7 +73,7 @@ BODY {
 }
 
 #badge {
-  background: #111920;
+  background: transparent;
   padding: 0.45em;
   float: right;
   width: 20.5em;
@@ -88,7 +88,7 @@ BODY {
 
 #badge span {
   font-size: 18pt;
-  color: #eaeaea;
+  color: #F4F4F4;
 }
 
 #badge p {

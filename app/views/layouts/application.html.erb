@@ -11,7 +11,7 @@
     <script type="text/javascript" charset="utf-8">
       jQuery.noConflict();
       jQuery(function($) {
-        var endTime = $.countdown.UTCDate(0, new Date(2009,8,12));
+        var endTime = $.countdown.UTCDate(0, new Date(2009,8,19));
         if ($.countdown.UTCDate(0, new Date()) < endTime) {
           $('#countdown').countdown({until: endTime, layout: 'Countdown: {dn} {dl}, {hn} {hl}, {mn} {ml}, {sn} {sl}'});
         }
@@ -30,11 +30,10 @@
         <%= render :partial => 'users/anonymous_badge' %>
       <% end %>
       
-      <h1><%= link_to Wiki.name, root_path %></h1>
-      <h2><%= Wiki.description %></h2>
-      <div id="countdown">
-        
-      </div>
+      <!-- <h1><%= link_to Wiki.name, root_path %></h1>
+      <h2><%= Wiki.description %></h2> -->
+      <div id="logo"><%= link_to image_tag('jsrumble-logo.gif', :alt => 'jsrumble'), root_path %></div>
+      <div id="countdown">&nbsp;</div>
       <%- if @navigation -%>
         <div id="navigation">
           <%= wiki_link(@navigation.body_html)  %>
